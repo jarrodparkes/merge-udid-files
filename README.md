@@ -6,15 +6,15 @@ If you've used Crashlytics Beta or other services for distributing and testing i
 
 ## How to Use
 
-1. Select all Crashlytics emails in your email client and export their attachments. This is very easy using the macOS Mail app. After you've selected all emails, you can go to **File-->Save Attachments...** and then select a location on your machine where you want to save them.
+[1] Select all Crashlytics emails in your email client and export their attachments. This is very easy using the macOS Mail app. After you've selected all emails, you can go to **File-->Save Attachments...** and then select a location on your machine where you want to save them.
 
 ![](/get-emails.png)
 
-2. Move all the attachments into this directory with the Python file (at some point I'll allow you to specify a path in the Python script...)
+[2] Run `python merge-udid-files.py`
 
-3. Run `python merge-udid-files.py`
+> **NOTE**: When running the script, you must specify the absolute path to where you saved the attachments. The script also expects all attachments to have a filename matching this pattern `device-udid-export*.txt`.
 
-4. The file `device-udid-all.txt` is generated. Use it for upload in the Apple Developer Portal!
+[3] The file `device-udid-all.txt` is generated alongside the attachments. Use it for upload in the Apple Developer Portal!
 
 ## Example
 
